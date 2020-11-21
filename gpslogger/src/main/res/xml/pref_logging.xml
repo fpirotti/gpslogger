@@ -5,11 +5,11 @@
                   android:summary="@string/pref_logging_summary">
 
 
-        <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
-            android:key="log_gpx"
-            android:title="@string/log_gpx_title"
-            android:summary="@string/log_gpx_summary"
-            android:defaultValue="true"/>
+    <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
+        android:defaultValue="false"
+        android:key="log_gpx"
+        android:summary="@string/log_gpx_summary"
+        android:title="@string/log_gpx_title" />
 
         <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
             android:key="log_gpx_11"
@@ -39,9 +39,10 @@
             android:title="@string/log_plain_text_title"/>
 
     <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
+        android:defaultValue="true"
         android:key="log_geojson"
         android:summary="@string/log_json_summary"
-        android:title="@string/log_json_title"/>
+        android:title="@string/log_json_title" />
 
         <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
             android:key="log_nmea"
@@ -59,12 +60,12 @@
             android:summary="@string/gpslogger_folder_summary" />
 
         <com.afollestad.materialdialogs.prefs.MaterialListPreference
-            android:key="new_file_creation"
-            android:title="@string/new_file_creation_title"
-            android:summary="@string/new_file_creation_summary"
+            android:defaultValue="false"
             android:entries="@array/filecreation_entries"
-            android:defaultValue="onceaday"
-            android:entryValues="@array/filecreation_values"/>
+            android:entryValues="@array/filecreation_values"
+            android:key="new_file_creation"
+            android:summary="@string/new_file_creation_summary"
+            android:title="@string/new_file_creation_title" />
         <Preference
             android:key="new_file_custom_name"
             android:title="@string/new_file_custom_title"
@@ -79,10 +80,10 @@
             android:summary="@string/new_file_custom_keep_changing_summary"
             android:defaultValue="true"></com.mendhak.gpslogger.ui.components.CustomSwitchPreference>
         <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
+            android:defaultValue="false"
             android:key="new_file_custom_each_time"
-            android:title="@string/new_file_custom_each_time_title"
             android:summary="@string/new_file_custom_each_time_summary"
-            android:defaultValue="true"></com.mendhak.gpslogger.ui.components.CustomSwitchPreference>
+            android:title="@string/new_file_custom_each_time_title"></com.mendhak.gpslogger.ui.components.CustomSwitchPreference>
         <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
             android:key="new_file_prefix_serial"
             android:title="@string/new_file_prefix_serial_title"

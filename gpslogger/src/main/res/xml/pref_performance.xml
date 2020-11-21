@@ -21,21 +21,21 @@
         android:summary="@string/listeners_passive_summary" />
 
 
-
     <com.afollestad.materialdialogs.prefs.MaterialEditTextPreference
-        android:key="time_before_logging"
-        android:title="@string/time_before_logging_title"
-        android:summary="@string/time_before_logging_summary"
+        android:defaultValue="10"
         android:dialogTitle="@string/time_before_logging_dialog_title"
-        android:numeric="integer"
-        android:maxLength="4"
         android:hint="@string/time_before_logging_hint"
-        android:defaultValue="60"/>
+        android:key="time_before_logging"
+        android:maxLength="4"
+        android:numeric="integer"
+        android:summary="@string/time_before_logging_summary"
+        android:title="@string/time_before_logging_title" />
 
     <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
+        android:defaultValue="true"
         android:key="keep_fix"
         android:summary="@string/keep_fix_summary"
-        android:title="@string/keep_fix_title"/>
+        android:title="@string/keep_fix_title" />
 
 
     <com.afollestad.materialdialogs.prefs.MaterialEditTextPreference

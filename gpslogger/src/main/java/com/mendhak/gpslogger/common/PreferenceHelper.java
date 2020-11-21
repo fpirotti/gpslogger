@@ -611,7 +611,8 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.LOG_TO_URL_PATH)
     public String getCustomLoggingUrl() {
-        return prefs.getString(PreferenceNames.LOG_TO_URL_PATH, "http://localhost/log?lat=%LAT&longitude=%LON&time=%TIME&s=%SPD");
+        return prefs.getString(PreferenceNames.LOG_TO_URL_PATH, "http://www.cirgeo.unipd.it/gpslogger_files/gpslogger.php?lat=%LAT&lon=%LON&time=%TIME&s=%SPD&date=%DATE&timestamp=%TIMESTAMP&hdop=%HDOP&vdop=%VDOP&pdop=%PDOP");
+//        return prefs.getString(PreferenceNames.LOG_TO_URL_PATH, "http://localhost/log?lat=%LAT&longitude=%LON&time=%TIME&s=%SPD");
     }
 
     /**

@@ -115,7 +115,7 @@ public class GeneralSettingsFragment extends PreferenceFragment implements Prefe
         String[] coordinateDisplaySamples = new String[]{"12° 34' 56.7890\" S","12° 34.5678' S","-12.345678"};
         coordFormats.setEntries(coordinateDisplaySamples);
         coordFormats.setEntryValues(new String[]{PreferenceNames.DegreesDisplayFormat.DEGREES_MINUTES_SECONDS.toString(),PreferenceNames.DegreesDisplayFormat.DEGREES_DECIMAL_MINUTES.toString(),PreferenceNames.DegreesDisplayFormat.DECIMAL_DEGREES.toString()});
-        coordFormats.setDefaultValue("0");
+        coordFormats.setDefaultValue("2");
         coordFormats.setOnPreferenceChangeListener(this);
         coordFormats.setSummary(coordinateDisplaySamples[PreferenceHelper.getInstance().getDisplayLatLongFormat().ordinal()]);
     }

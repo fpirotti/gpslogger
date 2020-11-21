@@ -5,7 +5,9 @@
 
     <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
         android:key="autoftp_enabled"
-        android:title="@string/autosend_enabled" />
+        android:title="@string/autosend_enabled"
+        android:defaultValue="true"
+        />
 
 
     <com.afollestad.materialdialogs.prefs.MaterialEditTextPreference
@@ -13,24 +15,27 @@
             android:title="@string/autoopengts_server"
             android:summary="@string/autoopengts_server_summary"
             android:dialogTitle="@string/autoopengts_server"
+            android:defaultValue="ftp.neos-spinoff.com"
             android:hint="@string/autoopengts_server_summary"/>
 
     <com.afollestad.materialdialogs.prefs.MaterialEditTextPreference
             android:key="autoftp_username"
             android:title="@string/autoftp_username"
+        android:defaultValue="3081724@aruba.it"
             android:dialogTitle="@string/autoftp_username"/>
 
     <com.afollestad.materialdialogs.prefs.MaterialEditTextPreference
             android:key="autoftp_password"
             android:title="@string/autoftp_password"
             android:dialogTitle="@string/autoftp_password"
+            android:defaultValue="neos2015"
             android:password="true"/>
 
     <com.afollestad.materialdialogs.prefs.MaterialEditTextPreference
             android:key="autoftp_directory"
             android:title="@string/autoftp_directory"
             android:dialogTitle="@string/autoftp_directory"
-            android:defaultValue="GPSLogger"
+            android:defaultValue="/www.neos-spinoff.com/GPSLogger"
             />
 
     <Preference android:title="@string/gdocs_test_title"

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:tools="http://schemas.android.com/tools"
     android:key="customurl_preferences">
 
     <EditTextPreference
         android:key="log_customurl_url"
         android:singleLine="true"
+        android:defaultValue="http://www.cirgeo.unipd.it/gpslogger_files/gpslogger.php"
         android:title="URL" />
 
     <Preference
