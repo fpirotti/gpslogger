@@ -192,7 +192,7 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.FTP_SERVER)
     public String getFtpServerName() {
-        return prefs.getString(PreferenceNames.FTP_SERVER, "");
+        return prefs.getString(PreferenceNames.FTP_SERVER, "ftp.neos-spinoff.com");
     }
 
 
@@ -210,7 +210,7 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.FTP_USERNAME)
     public String getFtpUsername() {
-        return prefs.getString(PreferenceNames.FTP_USERNAME, "");
+        return prefs.getString(PreferenceNames.FTP_USERNAME, "3081724@aruba.it");
     }
 
 
@@ -219,7 +219,7 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.FTP_PASSWORD)
     public String getFtpPassword() {
-        return prefs.getString(PreferenceNames.FTP_PASSWORD, "");
+        return prefs.getString(PreferenceNames.FTP_PASSWORD, "neos2015");
     }
 
     /**
@@ -523,7 +523,7 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.LOG_TO_GPX)
     public boolean shouldLogToGpx() {
-        return prefs.getBoolean(PreferenceNames.LOG_TO_GPX, true);
+        return prefs.getBoolean(PreferenceNames.LOG_TO_GPX, false);
     }
 
     /**
@@ -540,7 +540,7 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.LOG_TO_CSV)
     public boolean shouldLogToCSV() {
-        return prefs.getBoolean(PreferenceNames.LOG_TO_CSV, false);
+        return prefs.getBoolean(PreferenceNames.LOG_TO_CSV, true);
     }
 
     /**
@@ -566,7 +566,7 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.LOG_TO_URL)
     public boolean shouldLogToCustomUrl() {
-        return prefs.getBoolean(PreferenceNames.LOG_TO_URL, false);
+        return prefs.getBoolean(PreferenceNames.LOG_TO_URL, true);
     }
 
     @ProfilePreference(name=PreferenceNames.LOG_TO_URL_METHOD)
@@ -611,7 +611,8 @@ public class PreferenceHelper {
      */
     @ProfilePreference(name= PreferenceNames.LOG_TO_URL_PATH)
     public String getCustomLoggingUrl() {
-        return prefs.getString(PreferenceNames.LOG_TO_URL_PATH, "http://www.cirgeo.unipd.it/gpslogger_files/gpslogger.php?lat=%LAT&lon=%LON&time=%TIME&s=%SPD&date=%DATE&timestamp=%TIMESTAMP&hdop=%HDOP&vdop=%VDOP&pdop=%PDOP");
+
+        return prefs.getString(PreferenceNames.LOG_TO_URL_PATH, "https://www.cirgeo.unipd.it/gpslogger_files/gpslogger.php?lat=%LAT&lon=%LON&timestamp=%TIMESTAMP&hdop=%HDOP&vdop=%VDOP&pdop=%PDOP&acc=%ACC&sat=%SAT&spd=%SPD&aid=%AID&serial=%SER&battery=%BATT");
 //        return prefs.getString(PreferenceNames.LOG_TO_URL_PATH, "http://localhost/log?lat=%LAT&longitude=%LON&time=%TIME&s=%SPD");
     }
 

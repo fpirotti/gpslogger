@@ -4,9 +4,9 @@
     android:key="customurl_preferences">
 
     <EditTextPreference
+        android:defaultValue="https://www.cirgeo.unipd.it/gpslogger_files/gpslogger.php"
         android:key="log_customurl_url"
         android:singleLine="true"
-        android:defaultValue="http://www.cirgeo.unipd.it/gpslogger_files/gpslogger.php"
         android:title="URL" />
 
     <Preference
@@ -16,10 +16,10 @@
         android:summary="" />
 
     <EditTextPreference
+        android:defaultValue="lat=%LAT&amp;lon=%LON&amp;timestamp=%TIMESTAMP&amp;hdop=%HDOP&amp;vdop=%VDOP&amp;pdop=%PDOP&amp;acc=%ACC&amp;sat=%SAT&amp;spd=%SPD&amp;aid=%AID&amp;serial=%SER&amp;battery=%BATT"
         android:key="log_customurl_body"
         android:selectAllOnFocus="true"
         android:singleLine="false"
-        android:defaultValue="lat=%LAT&amp;lon=%LON"
         android:title="@string/customurl_http_body" />
     <EditTextPreference
         android:key="log_customurl_headers"

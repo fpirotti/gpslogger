@@ -22,11 +22,11 @@
             android:summary="@string/log_kml_summary"
             android:title="@string/log_kml_title"/>
 
-        <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
-            android:title="@string/log_customurl_title"
-            android:summary="@string/log_customurl_summary"
-            android:key="log_customurl_enabled">
-        </com.mendhak.gpslogger.ui.components.CustomSwitchPreference>
+    <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
+        android:defaultValue="true"
+        android:key="log_customurl_enabled"
+        android:summary="@string/log_customurl_summary"
+        android:title="@string/log_customurl_title"></com.mendhak.gpslogger.ui.components.CustomSwitchPreference>
 
         <com.mendhak.gpslogger.ui.components.CustomSwitchPreference
             android:key="log_opengts"
